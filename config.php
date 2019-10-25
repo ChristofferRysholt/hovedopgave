@@ -9,6 +9,11 @@ define("TEMPLATE_PATH", "templates");
 define("HOMEPAGE_NUM_ARTICLES", 5);
 define("ADMIN_USERNAME", "admin");
 define("ADMIN_PASSWORD", "mypass");
+define("ARTICLE_IMAGE_PATH", "images/articles");
+define("IMG_TYPE_FULLSIZE", "fullsize");
+define("IMG_TYPE_THUMB", "thumb");
+define("ARTICLE_THUMB_WIDTH", 120);
+define("JEPG_QUALITY", 85);
 require(CLASS_PATH . "/Article.php" );
 require(CLASS_PATH . "/Category.php");
 

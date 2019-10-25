@@ -1,1 +1,11 @@
+hash admin password
+
 skift Article til article
+
+skift div til sections
+
+lav dynamiske alt tags
+
+fjern inline css
+
+bedre seo URLs

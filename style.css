@@ -23,6 +23,10 @@ h3.categoryDescription {
 a {
   color: white;
 }
+.content {
+  display: flex;
+  width: 100%;
+}
 #container {
   width: 960px;
   background: rgb(50,50,50);
@@ -88,6 +92,23 @@ footer {
 .category a {
   color: #999;
   text-decoration: underline;
+}
+/* Article pages */
+#articleImageFullsize {
+  width: 250px;
+  float: left;
+  margin: 4px 20px 10px 0;
+  border: 1px solid #00a0b0;
+}
+#articleImage {
+  border: 2px solid #666;
+}
+#deleteImage {
+  clear: both;
+}
+label[for="deleteImage"] {
+  float: none;
+  display: inline;
 }
 /* admin header */
 #adminHeader {
@@ -179,7 +200,7 @@ input:valid, textarea:valid {
 }
 input[type="submit"] {
   display: inline;
-  margin: 0 20px;
+  margin: 0 0 1% 0;
   padding: 10px;
   border: 2px solid rgb(16,218,222);
   -moz-border-radius: 5px;
@@ -203,6 +224,12 @@ input[type="submit"]:active {
   -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
   -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
   box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+}
+input[type="checkbox"] {
+  display: inline-block;
+  padding: 0;
+  margin: 0 0 0.8em 9;
+  width: auto;
 }
 /* Tables */
 table {

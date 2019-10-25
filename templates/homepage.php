@@ -11,7 +11,12 @@
               <span class="category">in <a href=".?action=archieve&amp;categoryId=<=php echo $article->categoryId?>"><?php echo htmlspecialchars($results['categories'][$article->categoryId]->name) ?></a></span>
               <?php } ?>
             </h2>
-            <p class="summary"><?php echo htmlspecialchars($article->summary)?></p>
+            <p class="summary">
+              <?php if ($imagePath = $article->getImagePath(IMG_TYPE_THUMB)) { ?>
+                <a href=".?action=viewArticle&amp;articleId=<?php echo $article->id?>"><img class="articleImageThumb" src="<?php echo $imagePath?>" alt="Article Thumbnail"></a>
+              <?php } ?>
+              <?php echo htmlspecialchars($article->summary)?>
+            </p>
         </li>
 <?php } ?>
 
