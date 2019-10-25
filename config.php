@@ -10,6 +10,7 @@ define("HOMEPAGE_NUM_ARTICLES", 5);
 define("ADMIN_USERNAME", "admin");
 define("ADMIN_PASSWORD", "mypass");
 require(CLASS_PATH . "/Article.php" );
+require(CLASS_PATH . "/Category.php");
 
 
 function handleException ($exception) {

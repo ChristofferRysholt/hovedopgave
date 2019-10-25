@@ -1,9 +1,5 @@
 <?php include "templates/include/header.php" ?>
-
-      <div id="adminHeader">
-        <h2>Widget News Admin</h2>
-        <p>You are logged in as <b><?php echo htmlspecialchars($_SESSION['username']) ?></b>. <a href="admin.php?action=logout"?>Log out</a></p>
-      </div>
+<?php include "templates/admin/include/header.php"?>
 
       <h1><?php echo $results['pageTitle']?></h1>
 
@@ -15,7 +11,6 @@
 <?php } ?>
 
         <ul>
-
           <li>
             <label for="title">Article Title</label>
             <input type="text" name="title" id="title" placeholder="Name of the article" required autofocus maxlength="255" value="<?php echo htmlspecialchars($results['article']->title )?>">
@@ -32,10 +27,19 @@
           </li>
 
           <li>
+            <label for="categoryId">Article Category</label>
+            <select name="categoryId">
+              <option value="0"><?php echo !$results['article']->categoryId ? " selected" : ""?>(none)</option>
+            <?php foreach ($results['categories'] as $category) { ?>
+              <option value="<?php echo $category->id?>"<?php echo ($category->id == $results['article']->categoryId) ? " selected" : ""?>><?php echo htmlspecialchars($category->name)?></option>
+            <?php } ?>
+            </select>
+          </li>
+
+          <li>
             <label for="publicationDate">Publication Date</label>
             <input type="date" name="publicationDate" id="publicationDate" placeholder="YYYY-MM-DD" required maxlength="10" value="<?php echo $results['article']->publicationDate ? date("Y-m-d", $results['article']->publicationDate) : "" ?>">
           </li>
-
 
         </ul>
 
@@ -51,4 +55,3 @@
 <?php } ?>
 
 <?php include "templates/include/footer.php" ?>
-
