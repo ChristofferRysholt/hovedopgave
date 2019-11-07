@@ -1,0 +1,5 @@
+hash admin password
+skift div til sections
+lav dynamiske alt tags
+fjern inline css
+bedre SEO URLs

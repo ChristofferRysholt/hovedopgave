@@ -97,9 +97,9 @@ class Article
        $tempFilename = trim($image['tmp_name']);
 
        if (is_uploaded_file($tempFilename)) {
-         if (!(move_uploaded_file($tempFilename, $this->getImagePath()))) trigger_error("Article::storeUploadedImage(): Couldn't move uploaded file.", E_USER_ERROR);
-         if (!(chmod($this->getImagePath(), 0666))) trigger_error("Article::storeUploadedImage(): Couldn't set permissions on uploaded file.", E_USER_ERROR);
-       }
+        if (!(move_uploaded_file($tempFilename, $this->getImagePath()))) trigger_error("Article::storeUploadedImage(): Couldn't move uploaded file.", E_USER_ERROR);
+        if (!(chmod($this->getImagePath(), 0666))) trigger_error("Article::storeUploadedImage(): Couldn't set permissions on uploaded file.", E_USER_ERROR);
+      }
 
        // Get the image size and type
        $attrs = getimagesize($this->getImagePath());

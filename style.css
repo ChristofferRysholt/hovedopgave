@@ -39,9 +39,7 @@ a {
 .logo {
   display: block;
   width: 300px;
-  padding: 0 660px 20px 0;
   border: none;
-  border-bottom: 1px solid gray;
   margin-bottom: 40px;
 }
 footer {
@@ -247,7 +245,7 @@ table, th {
 th {
   border-left: none;
   border-right: none;
-  background: #ef7d50;
+  background: rgb(16,218,222);
   color: #fff;
   cursor: default;
 }
