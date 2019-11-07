@@ -129,7 +129,7 @@ class Article
        // Save the thumbnail
        switch($imageType) {
          case IMAGETYPE_GIF:
-          imagegif($thumbResource, $this->getImagePath(IMG_TYPE_THUMb));
+          imagegif($thumbResource, $this->getImagePath(IMG_TYPE_THUMB));
           break;
         case IMAGETYPE_JPEG:
           imagejpeg($thumbResource, $this->getImagePath(IMG_TYPE_THUMB));

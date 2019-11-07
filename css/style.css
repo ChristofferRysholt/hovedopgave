@@ -95,6 +95,35 @@ body {
 .hero-image {
     width: 100%;
 }
+/* --- CMS stuff --- */
+#headlines {
+    padding: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.summary {
+    font-size: 1.2rem;
+    text-align: center;
+}
+/* --- grid --- */
+.grid-container {
+    display: grid;
+    padding: 10px;
+}
+.grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.grid-item h2 {
+    font-size: 1.5rem;
+}
+.grid-item a {
+    color: rgb(170,170,170);
+}
+.grid-item img {
+    width: 320px;
+}
 /* --- Footer --- */
 footer {
     display: flex;
@@ -118,6 +147,10 @@ footer h2 {
 
 /* --- media screen --- */
 @media screen and (min-width: 0px){
+    /* --- grid --- */
+    .grid-container {
+        grid-template-columns: auto;
+    }
     /* --- flex grid --- */
     .flex-container {
         margin: 0 auto;
@@ -166,6 +199,12 @@ footer h2 {
         width: 33%;
         margin-left: 5%;
         margin-top: 2%;
+    }
+}
+@media screen and (min-width: 800px) {
+    /* --- grid --- */
+    .grid-container {
+        grid-template-columns: auto auto;
     }
 }
 @media screen and (min-width: 950px) {
@@ -220,4 +259,22 @@ footer h2 {
     .topnav #logo {
         display: none;
     }
+}
+@media screen and (min-width: 1220px) {
+    /* --- grid --- */
+    .grid-container {
+        grid-template-columns: auto auto auto;
+    }    
+}
+@media screen and (min-width: 1550px) {
+        /* --- grid --- */
+        .grid-container {
+            grid-template-columns: auto auto auto auto;
+        }    
+}
+@media screen and (min-width: 1800px) {
+    /* --- grid --- */
+    .grid-container {
+        grid-template-columns: auto auto auto auto auto;
+    }    
 }

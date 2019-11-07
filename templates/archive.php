@@ -30,7 +30,7 @@
 
       <p><?php echo $results['totalRows']?> article<?php echo ($results['totalRows'] != 1) ? 's' : '' ?> in total.</p>
 
-      <p><a href="./">Return to Homepage</a></p>
+      <p><a href="./admin.php">Return to Admin Control Panel</a></p>
 
 <?php include "templates/include/footer.php" ?>
 
