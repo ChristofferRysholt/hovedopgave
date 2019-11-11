@@ -1,4 +1,4 @@
-<?php include "templates/include/header-grid.php" ?>
+<?php include "templates/include/header-content.php" ?>
 
 <article>
   <header>
@@ -38,8 +38,9 @@
               </div>
         <?php } ?>
       </div>
+    </div>
+    </ul>
+    <div class="section s2 fp-auto-height">
 
-      </ul>
-
-<?php include "templates/include/footer.php" ?>
+<?php include "templates/include/footer-content-2.php" ?>
 
