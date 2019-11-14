@@ -107,6 +107,12 @@ body {
     margin: 0;
     margin-right: 30%;
 }
+.text-wide {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-left: 7%;
+    margin-right: 7%;
+}
 .hero-image {
     width: 100%;
 }
@@ -291,6 +297,6 @@ footer h2 {
 @media screen and (min-width: 1800px) {
     /* --- grid --- */
     .grid-container {
-        grid-template-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto;
     }    
 }
