@@ -64,7 +64,7 @@ body {
     background-color: rgb(30,30,30);
 }
 #fp-nav span {
-    background: red !important;
+    background: rgb(19, 109, 1) !important;
 }
 
 /* --- two columns --- */
@@ -94,7 +94,7 @@ body {
 }
 .inner-flipped {
     width: 99%;
-    height: 99%;
+    height: 99%;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,6 +109,9 @@ body {
 }
 .hero-image {
     width: 100%;
+}
+.large-image {
+    width: 50%;
 }
 /* --- CMS stuff --- */
 #headlines {
@@ -142,7 +145,7 @@ body {
 /* --- Footer --- */
 footer {
     display: flex;
-    background-color: rgb(30,30,30);
+    background-color: rgb(50,50,50);
     width: 100%;
 }
 footer h2 {
