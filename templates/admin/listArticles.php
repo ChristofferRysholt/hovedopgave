@@ -15,7 +15,6 @@
         <tr>
           <th>Publication Date</th>
           <th>Article</th>
-          <th>Category</th>
         </tr>
 
 <?php foreach ($results['articles'] as $article) { ?>
@@ -24,9 +23,6 @@
           <td><?php echo date('j M Y', $article->publicationDate)?></td>
           <td>
                 <?php echo $article->title?>
-          </td>
-          <td>
-                <?php echo $results['categories'][$article->categoryId]->name ?>
           </td>
         </tr>
 

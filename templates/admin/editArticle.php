@@ -38,16 +38,6 @@
           </li>
 
           <li>
-            <label for="categoryId">Article Category</label>
-            <select name="categoryId">
-              <option value="0"><?php echo !$results['article']->categoryId ? " selected" : ""?>(none)</option>
-            <?php foreach ($results['categories'] as $category) { ?>
-              <option value="<?php echo $category->id?>"<?php echo ($category->id == $results['article']->categoryId) ? " selected" : ""?>><?php echo htmlspecialchars($category->name)?></option>
-            <?php } ?>
-            </select>
-          </li>
-
-          <li>
             <label for="publicationDate">Publication Date</label>
             <input type="date" name="publicationDate" id="publicationDate" placeholder="YYYY-MM-DD" required maxlength="10" value="<?php echo $results['article']->publicationDate ? date("Y-m-d", $results['article']->publicationDate) : "" ?>">
           </li>
