@@ -1,6 +1,0 @@
-Alt tags på alle billeder
-Skift divs til section
-Oversæt alt i PHP til dansk
-Skift alle media queries til min-width
-
-fjern dato ting fra kode
