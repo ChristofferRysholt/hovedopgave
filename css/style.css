@@ -3,13 +3,12 @@ body {
     padding: 0 auto;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/wood-brown.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .centered {
     text-align: center;
-}
-.arrow {
-    font-size: 1.5rem;
-    margin-top: 10%;
 }
 /* --- menu --- */
 .topnav {
@@ -51,23 +50,27 @@ body {
 
 /* --- fullpage.js --- */
 .s1 {
+    /*
     background-image: url("../images/wood-brown.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    */
 }
 .s2 {
-    background-image: url("../images/wood-filtered-small.jpg");
+    /*
+    background-image: url("../images/wood-brown.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    */
 }
 .s3 {
     background-color: rgb(30,30,30);
 }
 #fp-nav span {
-    background: rgb(19, 109, 1) !important;
+    background: rgb(77, 109, 1) !important;
 }
 
-/* --- two columns --- */
+/* --- Index --- */
 .left {
     display: flex;
     float: left;
@@ -114,10 +117,22 @@ body {
 }
 .hero-image {
     width: 100%;
+    margin-right: 40%;
+    margin-top: 30%;
+}
+.logo-index img {
+    width: 200%;
+    margin-top: 130%;
+    margin-left: 15%;
 }
 .large-image {
     width: 50%;
 }
+.arrow {
+    font-size: 1.5rem;
+    margin-top: 15%;
+}
+
 /* --- CMS stuff --- */
 #headlines {
     padding: 0;
@@ -150,7 +165,7 @@ body {
 /* --- Footer --- */
 footer {
     display: flex;
-    background-color: rgb(50,50,50);
+    background-color: rgba(10,10,10);
     width: 100%;
 }
 footer h2 {
