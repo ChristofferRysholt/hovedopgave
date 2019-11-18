@@ -18,21 +18,22 @@
 
   <div id="fullPage">
     <div class="section s1">
-        <h1><?php echo htmlspecialchars($results['article']->title)?></h1>
-        <div style="font-style: italic;"><?php echo htmlspecialchars($results['article']->summary)?></div>
-        <div>
-            <?php if ($imagePath = $results['article']->getImagePath()) { ?>
-                <img id="articleImageFullsize" src="<?php echo $imagePath?>" alt="Article Image">
-            <?php } ?>
-            <section class="content">
-                <p><?php echo $results['article']->content?></p>
+        <section class="centered-section">
+            <section class="centered-section-content">
+                <h1 class="centered"><?php echo htmlspecialchars($results['article']->title)?></h1>
+                <section>
+                    <?php if ($imagePath = $results['article']->getImagePath()) { ?>
+                        <img id="articleImageFullsize" src="<?php echo $imagePath?>" alt="Article Image">
+                    <?php } ?>
+
+                    <section class="italic"><?php echo htmlspecialchars($results['article']->summary)?></section>
+
+                    <section class="content">
+                        <p><?php echo $results['article']->content?></p>
+                    </section>
+                </div>
             </section>
-        </div>
-        <p class="pubDate">Published on <?php echo date('j F Y', $results['article']->publicationDate)?>
-            <?php if ($results['category']) { ?>
-                in <a href="./?action=archive&amp;categoryId=<?php echo $results['category']->id?>"><?php echo htmlspecialchars($results['category']->name) ?></a> 
-            <?php } ?>
-        </p>
+        </section>
     </div>
     
     <div class="section s2 fp-auto-height">
