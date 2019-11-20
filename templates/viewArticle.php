@@ -8,7 +8,7 @@
         <a href="kontakt.html">Kontakt</a>
         <a href="om.html">Om</a>
         <a href="kurser.html">Kurser</a>
-        <a href="index.php" class="active">Knive</a>
+        <a href="knive.php" class="active">Knive</a>
         <a href="index.html">Home</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>

@@ -8,7 +8,7 @@
         <a href="kontakt.html">Kontakt</a>
         <a href="om.html">Om</a>
         <a href="kurser.html">Kurser</a>
-        <a href="index.php" class="active">Knive</a>
+        <a href="knive.php" class="active">Knive</a>
         <a href="index.html">Home</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
@@ -24,11 +24,11 @@
         <?php foreach ($results['articles'] as $article) { ?>
               <div class="grid-item">
                 <h2>
-                  <a href=".?action=viewArticle&amp;articleId=<?php echo $article->id?>"><?php echo htmlspecialchars($article->title)?></a>
+                  <a href="knive.php?action=viewArticle&amp;articleId=<?php echo $article->id?>"><?php echo htmlspecialchars($article->title)?></a>
                 </h2>
                   <section class="summary">
                     <?php if ($imagePath = $article->getImagePath(IMG_TYPE_THUMB)) { ?>
-                      <a href=".?action=viewArticle&amp;articleId=<?php echo $article->id?>"><img class="articleImageThumb" src="<?php echo $imagePath?>" alt="Article Thumbnail">
+                      <a href="knive.php?action=viewArticle&amp;articleId=<?php echo $article->id?>"><img class="articleImageThumb" src="<?php echo $imagePath?>" alt="Article Thumbnail">
                         <?php } ?>
                         <p><?php echo htmlspecialchars($article->summary)?></p>
                       </a>
