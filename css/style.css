@@ -107,6 +107,13 @@ body {
 .images-flex img {
     width: 50%;
 }
+.images-flex-large {
+    float: left;
+    width: 50%;
+}
+.images-flex-large img {
+    width: 85%;
+}
 .images-grid {
     display: flex;
     flex-wrap: wrap;
