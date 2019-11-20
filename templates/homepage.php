@@ -3,7 +3,7 @@
 <article>
   <header>
     <nav class="topnav" id="myTopnav">
-      <section id="logo"><a href="home.html"><img src="images/logo-index.svg" alt=""></a></section>
+      <section id="logo"><a href="index.html"><img src="images/logo-index.svg" alt=""></a></section>
         <a href="#"><section class="flag"><img src="images/scotland.svg" title="English / Scottish" alt=""></a></section>
         <a href="kontakt.html">Kontakt</a>
         <a href="om.html">Om</a>
