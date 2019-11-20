@@ -7,6 +7,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+}
 .centered {
     text-align: center;
 }
@@ -47,30 +51,72 @@ body {
     font-size: 1.5rem;
     margin-right: 1%;
 }
-
+.flag img {
+    width: 1.2rem !important;
+}
+.flag a {
+    margin: 0;
+    padding: 0;
+    padding-left: 1%;
+    padding-top: 1%;
+    margin-right: 0.5%;
+}
 /* --- fullpage.js --- */
+/*
 .s1 {
-    /*
     background-image: url("../images/wood-brown.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    */
 }
 .s2 {
-    /*
     background-image: url("../images/wood-brown.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    */
 }
 .s3 {
     background-color: rgb(30,30,30);
 }
+*/
 #fp-nav span {
     background: rgb(77, 109, 1) !important;
 }
 
 /* --- Index --- */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex p {
+    font-size: 1.2rem;
+}
+.text-left {
+    float: left;
+    width: 100%;
+    margin-right: 5%;
+}
+.text-right {
+    float: left;
+    width: 100%;
+    margin-left: 6%;
+}
+.images-flex {
+    float: left;
+    width: 50%;
+}
+.images-flex img {
+    width: 50%;
+}
+.images-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+.images-grid img {
+    width: 46%;
+    padding: 2%;
+}
 .left {
     display: flex;
     float: left;
