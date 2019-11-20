@@ -54,7 +54,6 @@ class Article
     if (isset($data['imageExtension'])) $this->imageExtension = preg_replace ("/[^\.\,\-\_\'\"\@\?\!\$ a-zA-Z0-9()]/", "", $data['imageExtension']);
   }
 
-
   /**
   * Sets the object's properties using the edit form post values in the supplied array
   *
@@ -90,7 +89,7 @@ class Article
       $this->deleteImages();
 
       // Get and store the image filename extension
-      $this->imageExtension = strtolower( strrchr( $image['name'], '.' ) );
+      $this->imageExtension = strtolower(strrchr($image['name'], '.' ));
 
       // Store the image
       $tempFilename = trim($image['tmp_name']); 
@@ -246,7 +245,7 @@ class Article
 
   public function update() {
     // Does the Article object have an ID?
-    if (is_null( $this->id)) trigger_error("Article::update(): Attempt to update an Article object that does not have its ID property set.", E_USER_ERROR);
+    if (is_null($this->id)) trigger_error("Article::update(): Attempt to update an Article object that does not have its ID property set.", E_USER_ERROR);
    
     // Update the Article
     $conn = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
@@ -268,7 +267,7 @@ class Article
 
   public function delete() {
     // Does the Article object have an ID?
-    if (is_null( $this->id)) trigger_error("Article::delete(): Attempt to delete an Article object that does not have its ID property set.", E_USER_ERROR);
+    if (is_null($this->id)) trigger_error("Article::delete(): Attempt to delete an Article object that does not have its ID property set.", E_USER_ERROR);
 
     // Delete the Article
     $conn = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
