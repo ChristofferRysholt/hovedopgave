@@ -49,9 +49,7 @@
             </div>
           <?php }} ?>
         </div>
-
-        <p><?php echo htmlspecialchars("her er en test af æøå ÆØÅ") ?></p>
-
+        
         <script>
           var slideIndex = 1;
             showSlides(slideIndex);
