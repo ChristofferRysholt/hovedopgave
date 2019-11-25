@@ -43,12 +43,14 @@
           <?php foreach ($results['articles'] as $article) { ?>
             <div class="column">
               <?php if ($imagePath = $article->getImagePath(IMG_TYPE_THUMB)) { ?>
-                <img class="demo cursor small-image" src="<?php echo $imagePath?>" onclick="currentSlide('<?php echo $index ?>')" alt="Post Thumbnail" >
+                <img class="demo cursor small-image" src="<?php echo $imagePath?>" onclick="currentSlide('<?php echo $index ?>')" alt="<?php echo $article->title?>" >
               <?php } ?>
               <?php $index++ ?>
             </div>
           <?php }} ?>
         </div>
+
+        <p><?php echo htmlspecialchars("her er en test af æøå ÆØÅ") ?></p>
 
         <script>
           var slideIndex = 1;
