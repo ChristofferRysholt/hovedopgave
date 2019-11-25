@@ -1,18 +1,18 @@
             <footer>
                 <section class="footer-section">
-                    <h2>Overskrift</h2>
+                    <h2>Kontakt Info</h2>
                     <p>Text</p>
                     <p>Text</p>
                     <p>Text</p>
                 </section>      
                 <section class="footer-section">
-                    <h2>Overskrift</h2>
+                    <h2>Partnere</h2>
                     <p>Text</p>
                     <p>Text</p>
                     <p>Text</p>
                 </section>
                 <section class="footer-section">
-                    <h2>Overskrift</h2>
+                    <h2>SoMe</h2>
                     <p>Text</p>
                     <p>Text</p>
                     <p>Text</p>
