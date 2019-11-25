@@ -112,7 +112,7 @@ body {
     width: 50%;
 }
 .images-flex-large img {
-    width: 85%;
+    width: 75%;
 }
 .images-grid {
     display: flex;
@@ -170,13 +170,13 @@ body {
 }
 .hero-image {
     width: 100%;
-    margin-right: 40%;
+    margin-right: 35%;
     margin-top: 30%;
 }
 .logo-index img {
     width: 200%;
     margin-top: 130%;
-    margin-left: 15%;
+    margin-left: 5%;
 }
 .large-image {
     width: 50%;
@@ -184,6 +184,78 @@ body {
 .arrow {
     font-size: 1.5rem;
     margin-top: 15%;
+}
+
+/* --- gallery --- */
+
+.container {
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.mySlides {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.cursor {
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.caption-container {
+    text-align: center;
+    background-color: rgba(34,34,34,0.8);
+    padding: 2px 16px;
+    color: white;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    float: left;
+    width: 16.66%;
+}
+.large-image {
+    width: 100%;
+}
+.small-image {
+    width: 100%;
+}
+.demo {
+    opacity: 0.8;
+}
+.activeGallery, .demo:hover {
+    opacity: 1;
 }
 
 /* --- CMS stuff --- */
@@ -208,12 +280,19 @@ body {
 }
 .grid-item h2 {
     font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.5%;
+}
+.grid-item p {
+    margin: 0;
+    padding: 0;
 }
 .grid-item a {
     color: rgb(170,170,170);
 }
 .grid-item img {
-    width: 320px;
+    width: 240px;
 }
 /* --- Footer --- */
 footer {
