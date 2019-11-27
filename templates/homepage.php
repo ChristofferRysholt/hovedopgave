@@ -22,21 +22,26 @@
 
       <div class="container">
         <?php foreach ($results['articles'] as $article) { ?>
+
+          <section>
+            <h2 id="caption" class="centered"></h2>
+          </section>
               <div class="mySlides">
+                <section class="gallery-top">
                   <?php if ($imagePath = $article->getImagePath(IMG_TYPE_FULLSIZE)) { ?>
-                      <a href="knive.php?action=viewArticle&amp;articleId=<?php echo $article->id?>"><img class="large-image" src="<?php echo $imagePath?>" alt="Article Thumbnail">
-                  <?php } ?>
-                        <p><?php echo htmlspecialchars($article->summary)?></p>
-                      </a>
+                    <a href="knive.php?action=viewArticle&amp;articleId=<?php echo $article->id?>"><img class="large-image" src="<?php echo $imagePath?>" alt="Article Thumbnail">
+                    <div class="gallery-top-text">Nr: <?php echo htmlspecialchars($article->id) ?></div>
+                    <?php } ?>
+                    <p><?php echo htmlspecialchars($article->summary)?></p>
+                  </a>
+                  </section>
               </div>
         <?php } ?>
 
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
 
-        <div class="caption-container">
-          <h2 id="caption"></h2>
-        </div>
+        <hr>
 
         <div class="row">
           <?php $index = 1; { ?>
@@ -87,5 +92,5 @@
     </ul>
     <div class="section s2 fp-auto-height">
 
-<?php include "templates/include/footer-content.php" ?>
+<?php include "templates/include/footer-content.php"?>
 

@@ -188,13 +188,6 @@ body {
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
 .caption-container {
     text-align: center;
     background-color: rgba(34,34,34,0.8);
@@ -217,10 +210,23 @@ body {
     width: 100%;
 }
 .demo {
-    opacity: 0.8;
-}
-.activeGallery, .demo:hover {
     opacity: 1;
+}
+.gallery-top {
+    position: relative;
+}
+.gallery-top p {
+    padding: 0;
+    margin: 0;
+    margin-top: 2%;
+}
+.gallery-top-text {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: rgba(30,30,30,0.7);
+    font-size: 11px;
+    padding: 5px;
 }
 
 /* --- viewArticle --- */
