@@ -18,7 +18,7 @@
         <input type="hidden" name="articleId" value="<?php echo $results['article']->id ?>">
 
 <?php if (isset($results['errorMessage'])) { ?>
-        <div class="errorMessage"><?php echo $results['errorMessage'] ?></div>
+        <section class="errorMessage"><?php echo $results['errorMessage'] ?></section>
 <?php } ?>
 
         <ul>
@@ -61,10 +61,10 @@
 
         </ul>
 
-        <div class="buttons">
+        <section class="buttons">
           <input type="submit" name="saveChanges" value="Save Changes">
           <input type="submit" formnovalidate name="cancel" value="Cancel">
-        </div>
+        </section>
 
       </form>
 

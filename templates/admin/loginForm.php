@@ -4,7 +4,7 @@
         <input type="hidden" name="login" value="true">
 
 <?php if (isset($results['errorMessage'])) { ?>
-        <div class="errorMessage"><?php echo $results['errorMessage'] ?></div>
+        <section class="errorMessage"><?php echo $results['errorMessage'] ?></section>
 <?php } ?>
 
         <ul>
@@ -21,9 +21,9 @@
 
         </ul>
 
-        <div class="buttons">
+        <section class="buttons">
           <input type="submit" name="login" value="Login">
-        </div>
+        </section>
 
       </form>
 

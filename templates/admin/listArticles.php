@@ -4,11 +4,11 @@
         <h1>All Articles</h1>
 
         <?php if (isset($results['errorMessage'])) { ?>
-                <div class="errorMessage"><?php echo $results['errorMessage'] ?></div>
+                <section class="errorMessage"><?php echo $results['errorMessage'] ?></section>
         <?php } ?>
 
         <?php if (isset($results['statusMessage'])) { ?>
-                <div class="statusMessage"><?php echo $results['statusMessage'] ?></div>
+                <section class="statusMessage"><?php echo $results['statusMessage'] ?></section>
         <?php } ?>
 
       <table>
