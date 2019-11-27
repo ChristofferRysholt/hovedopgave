@@ -223,6 +223,18 @@ body {
     opacity: 1;
 }
 
+/* --- viewArticle --- */
+.centered-section {
+    position: relative;
+}
+.centered-section-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
 /* --- CMS stuff --- */
 #headlines {
     padding: 0;
