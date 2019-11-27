@@ -1,7 +1,0 @@
-PDO — PHP Data Objects — is an object-oriented library built into PHP that makes it easy for PHP scripts to talk to databases
-
-$conn = connector til MySQL databasen ved at bruge login detajlerne fra config.php
-
-: - bliver brugt som placeholder. (ex: :id). Dette bliver brugt af sikkerhedsmæssige årsager
-
-null - lukker connectionen til databaserne, så snart det er muligt for at 'free up memory on the server'
