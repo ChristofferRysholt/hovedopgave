@@ -31,6 +31,7 @@
                     <section class="content centered">
                         <p><?php echo $results['article']->content?></p>
                     </section>
+                </section>
             </section>
         </section>
     </div>
