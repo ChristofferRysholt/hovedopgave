@@ -8,6 +8,6 @@
 
   </head>
   <body>
-    <div id="container">
+    <section id="container">
 
       <a href="."><img class="logo" src="images/logo-index.svg" alt=""></a>

@@ -18,7 +18,7 @@
                     <p>Text</p>
                 </section>
             </footer>
-        </div>
+        </section>
     </div>
 </article>
 </main>
