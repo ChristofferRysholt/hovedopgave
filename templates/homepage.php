@@ -20,22 +20,20 @@
     <div class="section s1">
       <ul id="headlines">
 
-      <div class="container">
+      <section class="container">
         <?php foreach ($results['articles'] as $article) { ?>
 
-          <section>
-            <h2 id="caption" class="centered"></h2>
-          </section>
-              <div class="mySlides">
+          <section><h2 id="caption" class="centered"></h2></section>
+              <section class="mySlides">
                 <section class="gallery-top">
                   <?php if ($imagePath = $article->getImagePath(IMG_TYPE_FULLSIZE)) { ?>
                     <a href="knive.php?action=viewArticle&amp;articleId=<?php echo $article->id?>"><img class="large-image" src="<?php echo $imagePath?>" alt="Article Thumbnail">
-                    <div class="gallery-top-text">Nr: <?php echo htmlspecialchars($article->id) ?></div>
+                    <section class="gallery-top-text">Nr: <?php echo htmlspecialchars($article->id) ?></section>
                     <?php } ?>
                     <p><?php echo htmlspecialchars($article->summary)?></p>
                   </a>
                   </section>
-              </div>
+              </section>
         <?php } ?>
 
         <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -43,17 +41,18 @@
 
         <hr>
 
-        <div class="row">
+        <section class="row">
           <?php $index = 1; { ?>
           <?php foreach ($results['articles'] as $article) { ?>
-            <div class="column">
+            <section class="column">
               <?php if ($imagePath = $article->getImagePath(IMG_TYPE_THUMB)) { ?>
                 <img class="demo cursor small-image" src="<?php echo $imagePath?>" onclick="currentSlide('<?php echo $index ?>')" alt="<?php echo $article->title?>" >
               <?php } ?>
               <?php $index++ ?>
-            </div>
+            </section>
           <?php }} ?>
-        </div>
+        </section>
+      </section>
         
         <script>
           var slideIndex = 1;
@@ -88,7 +87,6 @@
         </script>
 
       </div>
-    </div>
     </ul>
     <div class="section s2 fp-auto-height">
 
