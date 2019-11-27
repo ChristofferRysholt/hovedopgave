@@ -26,9 +26,9 @@
                         <img id="articleImageFullsize" src="<?php echo $imagePath?>" alt="Article Image">
                     <?php } ?>
 
-                    <section class="italic"><?php echo htmlspecialchars($results['article']->summary)?></section>
+                    <section class="italic centered"><?php echo htmlspecialchars($results['article']->summary)?></section>
 
-                    <section class="content">
+                    <section class="content centered">
                         <p><?php echo $results['article']->content?></p>
                     </section>
                 </div>
