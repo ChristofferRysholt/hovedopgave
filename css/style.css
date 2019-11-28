@@ -299,7 +299,7 @@ input[type=submit]:hover {
 /* --- Footer --- */
 footer {
     display: flex;
-    background-color: rgba(10,10,10);
+    background-color: rgba(10,10,10,0.9);
     width: 100%;
 }
 footer h2 {
