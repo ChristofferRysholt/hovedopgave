@@ -1,0 +1,19 @@
+Hash admin password
+Lav dynamiske alt tags
+Fjern inline css
+Bedre SEO URLs
+
+H1 på alle undersider
+Title tags på .svg
+
+Fix så æøå kan være i posts
+
+Få mere end 5 billeder på underside (udvid id smallint(x) til højere i sql)
+
+Alt tags på alle billeder
+Skift divs til section
+Oversæt alt i PHP til dansk
+Skift alle media queries til min-width
+
+Fjern dato ting fra kode
+Fjern font-awesome font = mindre load (80kb)
