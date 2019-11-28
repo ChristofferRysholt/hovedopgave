@@ -21,9 +21,8 @@
         <section class="centered-section">
             <section class="centered-section-content">
                 <h1 class="centered"><?php echo htmlspecialchars($results['article']->title)?></h1>
-                <section>
                     <?php if ($imagePath = $results['article']->getImagePath()) { ?>
-                        <img id="articleImageFullsize" src="<?php echo $imagePath?>" alt="Article Image">
+                        <img id="articleImageFullsize" src="<?php echo $imagePath?>" alt="<?php echo htmlspecialchars($results['article']->title)?> | Skotteknive">
                     <?php } ?>
 
                     <section class="italic centered"><?php echo htmlspecialchars($results['article']->summary)?></section>
@@ -31,7 +30,6 @@
                     <section class="content centered">
                         <p><?php echo $results['article']->content?></p>
                     </section>
-                </section>
             </section>
         </section>
     </div>
