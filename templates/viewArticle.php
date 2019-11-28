@@ -1,4 +1,4 @@
-<?php include "templates/include/header-content.php" ?>
+<?php include "templates/include/header.php" ?>
 
 <article>
   <header>
@@ -38,4 +38,4 @@
     
     <div class="section s2 fp-auto-height">
 
-    <?php include "templates/include/footer-content.php"?>
+    <?php include "templates/include/footer.php"?>

@@ -1,4 +1,13 @@
-      <section id="adminHeader">
-        <h2>Widget News Admin</h2>
-        <p>You are logged in as <b><?php echo htmlspecialchars($_SESSION['username']) ?></b>. <a href="admin.php?action=listArticles">Edit Articles</a> <a href="admin.php?action=logout"?>Log Out</a></p>
-      </section>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo htmlspecialchars( $results['pageTitle'] )?></title>
+    <link rel="stylesheet" type="text/css" href="css/style-php.css">
+
+  </head>
+  <body>
+    <section id="container">
+
+      <a href="."><img class="logo" src="images/logo-index.svg" alt=""></a>

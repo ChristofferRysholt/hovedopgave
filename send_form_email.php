@@ -13,8 +13,7 @@ if(isset($_POST['email'])) {
         echo "Please go back and fix these errors.<br /><br />";
         die();
     }
- 
- 
+
     // validation expected data exists
     if(!isset($_POST['first_name']) ||
         !isset($_POST['last_name']) ||
@@ -23,8 +22,6 @@ if(isset($_POST['email'])) {
         !isset($_POST['comments'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
- 
-     
  
     $first_name = $_POST['first_name']; // required
     $last_name = $_POST['last_name']; // required
@@ -64,8 +61,6 @@ if(isset($_POST['email'])) {
       $bad = array("content-type","bcc:","to:","cc:","href");
       return str_replace($bad,"",$string);
     }
- 
-     
  
     $email_message .= "First Name: ".clean_string($first_name)."\n";
     $email_message .= "Last Name: ".clean_string($last_name)."\n";

@@ -8,7 +8,7 @@ define("CLASS_PATH", "classes");
 define("TEMPLATE_PATH", "templates");
 define("HOMEPAGE_NUM_ARTICLES", 10);
 define("ADMIN_USERNAME", "admin");
-define("ADMIN_PASSWORD", "mypass");
+define("ADMIN_PASSWORD", "a029d0df84eb5549c641e04a9ef389e5");
 define("ARTICLE_IMAGE_PATH", "images/articles");
 define("IMG_TYPE_FULLSIZE", "fullsize");
 define("IMG_TYPE_THUMB", "thumb");

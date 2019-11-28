@@ -1,5 +1,5 @@
-<?php include "templates/include/header.php" ?>
-<?php include "templates/admin/include/header.php"?>
+<?php include "templates/admin/include/header.php" ?>
+<?php include "templates/admin/include/header-front.php"?>
 
   <script>
     // Prevents file upload hangs in Mac Safari
@@ -69,7 +69,7 @@
       </form>
 
 <?php if ($results['article']->id) { ?>
-      <p><a href="admin.php?action=deleteArticle&amp;articleId=<?php echo $results['article']->id ?>" onclick="return confirm('Delete This Article?')">Delete This Article</a></p>
+      <p><a class="red" href="admin.php?action=deleteArticle&amp;articleId=<?php echo $results['article']->id ?>" onclick="return confirm('Delete This Article?')">Delete This Article</a></p>
 <?php } ?>
 
-<?php include "templates/include/footer.php" ?>
+<?php include "templates/admin/include/footer.php" ?>

@@ -1,5 +1,5 @@
-<?php include "templates/include/header.php" ?>
 <?php include "templates/admin/include/header.php" ?>
+<?php include "templates/admin/include/header-front.php" ?>
 
         <h1>All Articles</h1>
 
@@ -34,5 +34,5 @@
 
       <p><a href="admin.php?action=newArticle">Add a New Article</a></p>
 
-<?php include "templates/include/footer.php" ?>
+<?php include "templates/admin/include/footer.php" ?>
 
