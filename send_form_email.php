@@ -87,49 +87,55 @@ $headers = 'Fra: '.$email_from."\r\n".
 </head>
 <body>
   <main>
-  <header>
-    <nav class="topnav" id="myTopnav">
-      <section id="logo"><a href="index.html"><img src="images/logo-index.svg" alt=""></a></section>
-        <a href="#"><section class="flag"><img src="images/scotland.svg" title="English / Scottish" alt=""></a></section>
-        <a href="kontakt.html" class="active">Kontakt</a>
-        <a href="om.html">Om</a>
-        <a href="kurser.html">Kurser</a>
-        <a href="knive.php">Knive</a>
-        <a href="index.html">Home</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-    </nav>
-  </header>
+    <article>
+      <header>
+        <nav class="topnav" id="myTopnav">
+          <section id="logo"><a href="index.html"><img src="images/logo-index.svg" alt=""></a></section>
+            <a href="#"><section class="flag"><img src="images/scotland.svg" title="English / Scottish" alt=""></a></section>
+            <a href="kontakt.html" class="active">Kontakt</a>
+            <a href="om.html">Om</a>
+            <a href="kurser.html">Kurser</a>
+            <a href="knive.php">Knive</a>
+            <a href="index.html">Home</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+      </header>
+    </article>
 
   <div id="fullPage">
     <div class="section s1">
-      <section class="thank-you">
-          <h1>Tak for din besked <?php echo htmlspecialchars($first_name)?>. Jeg vender tilbage hurtigst muligt!</h1>
-      </section>
+      <article>
+        <section class="thank-you">
+            <h1>Tak for din besked <?php echo htmlspecialchars($first_name)?>. Jeg vender tilbage hurtigst muligt!</h1>
+        </section>
+      </article>
     </div>
 
     <div class="section s2 fp-auto-height">
-      <footer>
-        <section class="footer-section">
-          <h2>Kontakt info</h2>
-          <p>Text</p>
-          <p>Text</p>
-          <p>Text</p>
-        </section>      
-        <section class="footer-section">
-          <h2>Partnere</h2>
-          <p>Text</p>
-          <p>Text</p>
-          <p>Text</p>
-        </section>
-        <section class="footer-section">
-          <h2>SoMe</h2>
-          <p>Text</p>
-          <p>Text</p>
-          <p>Text</p>
-        </section>
-      </footer>
+      <article>
+        <footer>
+          <section class="footer-section">
+            <h2>Kontakt info</h2>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+          </section>      
+          <section class="footer-section">
+            <h2>Partnere</h2>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+          </section>
+          <section class="footer-section">
+            <h2>SoMe</h2>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+          </section>
+        </footer>
+      </article>
     </div>
   </div>
   </main>
