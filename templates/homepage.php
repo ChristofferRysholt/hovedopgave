@@ -27,7 +27,7 @@
               <section class="mySlides">
                 <section class="gallery-top">
                   <?php if ($imagePath = $article->getImagePath(IMG_TYPE_FULLSIZE)) { ?>
-                    <a href="knive.php?action=viewArticle&amp;articleId=<?php echo $article->id?>"><img class="large-image" src="<?php echo $imagePath?>" alt="<?php echo htmlspecialchars($article->title)?> | Skotteknive">
+                    <a href="knive.php?action=viewArticle&amp;articleId=<?php echo $article->id?>"><img class="large-image" src="<?php echo $imagePath?>" alt="<?php echo htmlspecialchars($article->title)?> Håndlavet kniv - Skotteknive">
                     <section class="gallery-top-text">Nr: <?php echo htmlspecialchars($article->id) ?></section>
                     <?php } ?>
                     <p><?php echo htmlspecialchars($article->summary)?></p>
@@ -46,7 +46,7 @@
           <?php foreach ($results['articles'] as $article) { ?>
             <section class="column">
               <?php if ($imagePath = $article->getImagePath(IMG_TYPE_THUMB)) { ?>
-                <img class="demo cursor small-image" src="<?php echo $imagePath?>" onclick="currentSlide('<?php echo $index ?>')" alt="<?php echo htmlspecialchars($article->title)?> | Skotteknive" >
+                <img class="demo cursor small-image" src="<?php echo $imagePath?>" onclick="currentSlide('<?php echo $index ?>')" alt="<?php echo htmlspecialchars($article->title)?> Håndlavet kniv - Skotteknive" >
               <?php } ?>
               <?php $index++ ?>
             </section>

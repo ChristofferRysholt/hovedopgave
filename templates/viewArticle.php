@@ -22,7 +22,7 @@
             <section class="centered-section-content">
                 <h1 class="centered"><?php echo htmlspecialchars($results['article']->title)?></h1>
                     <?php if ($imagePath = $results['article']->getImagePath()) { ?>
-                        <img id="articleImageFullsize" src="<?php echo $imagePath?>" alt="<?php echo htmlspecialchars($results['article']->title)?> | Skotteknive">
+                        <img id="articleImageFullsize" src="<?php echo $imagePath?>" alt="<?php echo htmlspecialchars($results['article']->title)?> | Håndlavet kniv - Skotteknive">
                     <?php } ?>
 
                     <section class="italic centered"><?php echo htmlspecialchars($results['article']->summary)?></section>
