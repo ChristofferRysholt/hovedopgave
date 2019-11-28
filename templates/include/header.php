@@ -12,5 +12,4 @@
     <script src="js/main.js"></script>
 </head>
   <body>
-    <div id="container">
     <main>

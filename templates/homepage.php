@@ -1,23 +1,25 @@
 <?php include "templates/include/header.php" ?>
 
-<article>
-  <header>
-    <nav class="topnav" id="myTopnav">
-      <section id="logo"><a href="index.html"><img src="images/logo-index.svg" alt=""></a></section>
-        <a href="#"><section class="flag"><img src="images/scotland.svg" title="English / Scottish" alt=""></a></section>
-        <a href="kontakt.html">Kontakt</a>
-        <a href="om.html">Om</a>
-        <a href="kurser.html">Kurser</a>
-        <a href="knive.php" class="active">Knive</a>
-        <a href="index.html">Home</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-    </nav>
-  </header>
+  <article>
+    <header>
+      <nav class="topnav" id="myTopnav">
+        <section id="logo"><a href="index.html"><img src="images/logo-index.svg" alt=""></a></section>
+          <a href="#"><section class="flag"><img src="images/scotland.svg" title="English / Scottish" alt=""></a></section>
+          <a href="kontakt.html">Kontakt</a>
+          <a href="om.html">Om</a>
+          <a href="kurser.html">Kurser</a>
+          <a href="knive.php" class="active">Knive</a>
+          <a href="index.html">Home</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </nav>
+    </header>
+  </article>
 
   <div id="fullPage">
     <div class="section s1">
+      <article>
       <ul id="headlines">
 
       <section class="container">
@@ -55,10 +57,11 @@
       </section>
         
       <script src="js/form.js"></script>
-
+      
+      </article>
       </div>
     </ul>
     <div class="section s2 fp-auto-height">
-
+      <article>
 <?php include "templates/include/footer.php"?>
 

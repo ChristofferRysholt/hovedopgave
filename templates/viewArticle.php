@@ -15,9 +15,11 @@
         </a>
     </nav>
   </header>
+</article>
 
   <div id="fullPage">
     <div class="section s1">
+      <article>
         <section class="centered-section">
             <section class="centered-section-content">
                 <h1 class="centered"><?php echo htmlspecialchars($results['article']->title)?></h1>
@@ -32,8 +34,9 @@
                     </section>
             </section>
         </section>
+      </article>
     </div>
     
     <div class="section s2 fp-auto-height">
-
+      <article>
     <?php include "templates/include/footer.php"?>
