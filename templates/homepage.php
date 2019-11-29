@@ -47,7 +47,7 @@
           <?php $index = 1; { ?>
           <?php foreach ($results['articles'] as $article) { ?>
             <section class="column">
-              <?php if ($imagePath = $article->getImagePath(IMG_TYPE_THUMB)) { ?>
+              <?php if ($imagePath = $article->getImagePath(IMG_TYPE_FULLSIZE)) { ?>
                 <img class="demo cursor small-image" src="<?php echo $imagePath?>" onclick="currentSlide(<?php echo $index ?>)" alt="<?php echo htmlspecialchars($article->title)?>">
               <?php } ?>
               <?php $index++ ?>
