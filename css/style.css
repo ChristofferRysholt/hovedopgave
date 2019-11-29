@@ -316,6 +316,7 @@ footer {
 }
 footer h2 {
     font-size: 1.2rem;
+    margin-top: 1%;
 }
 .footer-section {
     float: left;
@@ -323,10 +324,13 @@ footer h2 {
     margin-left: 2%;
     text-align: center;
 }
-.footer-section img {
-  width: 60px;
-  height: 60px;
-  margin-left: 0%;
+.footer-img {
+    width: 100%;
+}
+.footer-img img {
+    width: 25px;
+    height: 25px;
+    margin-top: 1%;
 }
 
 /* --- media screen --- */
