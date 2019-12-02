@@ -19,6 +19,9 @@ h2 {
     margin-bottom: 0.5%;
     font-size: 1.5rem;
 }
+.italic {
+    font-style: italic;
+}
 .wrapper {
     margin-left: 10%;
     margin-right: 10%;
@@ -242,15 +245,18 @@ h2 {
 }
 
 /* --- viewArticle --- */
-.centered-section {
-    position: relative;
+.view-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.centered-section-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+.view-flex-content {
+    float: left;
+    margin-left: 1%;
+    width: 40%;
+}
+.view-flex-content h1 {
+    text-decoration: underline;
 }
 
 /* --- CMS stuff --- */
