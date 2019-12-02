@@ -26,7 +26,6 @@
               
           <section class="view-flex-content">
               <h1><?php echo htmlspecialchars($results['article']->title)?></h1>
-              <p class="italic"><?php echo htmlspecialchars($results['article']->summary)?></p>
               <section class="content">
                 <p><?php echo nl2br($results['article']->content)?></p>
               </section>

@@ -245,13 +245,7 @@ h2 {
 }
 
 /* --- viewArticle --- */
-.view-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .view-flex-content {
-    float: left;
     margin-left: 1%;
     width: 40%;
 }
@@ -387,7 +381,25 @@ footer h2 {
         width: 100%;
     }
 
-    /* --- something --- */
+    /* --- viewArticle --- */
+    .view-flex {
+        display: block;
+    }
+    .view-flex img {
+        display: block;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .view-flex-content {
+        display: block;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .view-flex-content h1 {
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 500px) {
@@ -407,6 +419,10 @@ footer h2 {
     }
     .images-flex-large img {
         width: 75%;
+    }
+    /* --- viewArticle --- */
+    .view-flex img {
+        width: 320px;
     }
 }
 @media screen and (min-width: 900px) {
@@ -434,6 +450,25 @@ footer h2 {
     /* --- Gallery --- */
     .prev, .next {
         display: block;
+    }
+
+    /* --- viewArticle --- */
+    .view-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .view-flex img {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .view-flex-content {
+        width: 40%;
+        margin-left: 1%;
+        margin-right: 0;  
+    }
+    .view-flex-content h1 {
+        text-align: left;
     }
 }
 @media screen and (min-width: 1305px) {
