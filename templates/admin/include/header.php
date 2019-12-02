@@ -10,4 +10,4 @@
   <body>
     <section id="container">
 
-      <a href="."><img class="logo" src="images/logo-index.svg" alt=""></a>
+      <a href="."><img class="logo" src="images/logo.svg" alt=""></a>
