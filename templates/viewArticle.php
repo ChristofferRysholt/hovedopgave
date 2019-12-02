@@ -19,21 +19,18 @@
 
   <div id="fullPage">
     <div class="section s1">
-      <article>
-        <section class="centered-section">
-            <section class="centered-section-content">
-                <h1 class="centered"><?php echo htmlspecialchars($results['article']->title)?></h1>
-                    <?php if ($imagePath = $results['article']->getImagePath()) { ?>
-                        <img id="articleImageFullsize" src="<?php echo $imagePath?>" alt="<?php echo htmlspecialchars($results['article']->title)?> | Håndlavet kniv - Skotteknive">
-                    <?php } ?>
-
-                    <section class="italic centered"><?php echo htmlspecialchars($results['article']->summary)?></section>
-
-                    <section class="content centered">
-                        <p><?php echo $results['article']->content?></p>
-                    </section>
-            </section>
-        </section>
+      <article class="view-flex">
+          <?php if ($imagePath = $results['article']->getImagePath()) { ?>
+            <img id="articleImageFullsize" src="<?php echo $imagePath?>" alt="<?php echo htmlspecialchars($results['article']->title)?> | Håndlavet kniv - Skotteknive">
+          <?php } ?>
+              
+          <section class="view-flex-content">
+              <h1><?php echo htmlspecialchars($results['article']->title)?></h1>
+              <p class="italic"><?php echo htmlspecialchars($results['article']->summary)?></p>
+              <section class="content">
+                <p><?php echo nl2br($results['article']->content)?></p>
+              </section>
+          </section>
       </article>
     </div>
     
