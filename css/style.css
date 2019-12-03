@@ -51,8 +51,8 @@ h2 {
     margin-left: 1.5%;
 }
 .topnav a img {
-    padding-top: 3%;
-    width: 50%;
+    padding-top: 2.5%;
+    width: 45%;
 }
 .topnav a:hover {
     color: white;
@@ -129,8 +129,9 @@ h2 {
     width: 100%;
 }
 .images-grid img {
-    width: 46%;
-    padding: 2%;
+    width: 44%;
+    margin: 2%;
+    border: 3px solid rgb(30, 30, 30);
 }
 .left {
     display: flex;
@@ -268,6 +269,10 @@ h2 {
     border-radius: 5px;
     background-color: rgb(30,30,30);
     padding: 20px;
+}
+.contact-h2 {
+    margin: 0;
+    margin-top: 1% !important;
 }
 input[type=text], select, textarea {
     background-color: rgb(50,50,50);
@@ -450,15 +455,6 @@ footer p {
     }
 }
 @media screen and (min-width: 900px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    p {
-        font-size: 1.2rem;
-    }
     /* --- menu --- */
     .partnere {
         display: block;
@@ -519,6 +515,15 @@ footer p {
     }
 }
 @media screen and (min-width: 1305px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
     .no-marg {
         margin-left: 0 !important;
         margin-right: 0 !important;
