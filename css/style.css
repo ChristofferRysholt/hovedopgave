@@ -220,6 +220,7 @@ h2 {
 }
 .large-image {
     width: 100%;
+    max-width: 320px;
 }
 .small-image {
     width: 100%;
