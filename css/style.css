@@ -82,6 +82,9 @@ h2 {
 #fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active+.fp-tooltip {
     display: none;
 }
+.fp-tooltip {
+    color: rgb(200,200,200) !important;
+}
 #fp-nav {
     display: none;
 }
