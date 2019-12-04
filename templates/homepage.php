@@ -32,7 +32,9 @@
                     <a href="knive.php?action=viewArticle&amp;articleId=<?php echo $article->id?>"><img class="large-image" src="<?php echo $imagePath?>" alt="<?php echo htmlspecialchars($article->title)?> Håndlavet kniv - Skotteknive">
                     <section class="gallery-top-text">Nr: <?php echo htmlspecialchars($article->id) ?></section>
                     <?php } ?>
-                    <p><?php echo htmlspecialchars($article->summary)?></p>
+                    <p class="summary"><?php echo htmlspecialchars($article->summary)?></p>
+                    <p class="underline">Læs mere her</p>
+                    <br>
                   </a>
                   </section>
               </section>
