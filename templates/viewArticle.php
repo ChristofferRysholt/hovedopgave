@@ -1,5 +1,29 @@
-<?php include "templates/include/header.php" ?>
-
+<!DOCTYPE html>
+<html lang="da-DK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?php echo htmlspecialchars($results['pageTitle'])?></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/main.js"></script>
+    <meta name="author" content="Rysholt.com">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta property="og:title" content="<?php echo htmlspecialchars($results['article']->title)?> | Skotteknive">
+    <meta property="og:description" content="<?php echo htmlspecialchars($results['article']->summary)?>">
+    <meta property="og:type" content="knives">
+    <meta property="og:image" content="rysholt.com/skotteknive/<?php echo htmlspecialchars($results['article']->getImagePath())?>">
+    <meta property="og:image:width" content="320">
+    <meta property="og:image:height" content="320">
+    <meta property="og:url" content="rysholt.com/skotteknive">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:site_name" content="<?php echo htmlspecialchars($results['article']->title)?> | Skotteknive">
+    <meta name="twitter:image:alt" content="<?php echo htmlspecialchars($results['article']->title)?> | Skotteknive">
+</head>
+  <body>
+    <main>
 <article>
   <header>
     <nav class="topnav" id="myTopnav">
