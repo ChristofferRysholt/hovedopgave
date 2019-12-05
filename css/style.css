@@ -365,6 +365,7 @@ footer p {
     }
     .images-flex-large img {
         width: 90%;
+        border: 3px solid rgb(30,30,30);
     }
     .flex {
         display: block;   
