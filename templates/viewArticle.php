@@ -14,10 +14,10 @@
     <meta property="og:title" content="<?php echo htmlspecialchars($results['article']->title)?> | Skotteknive">
     <meta property="og:description" content="<?php echo htmlspecialchars($results['article']->summary)?>">
     <meta property="og:type" content="knives">
-    <meta property="og:image" content="rysholt.com/skotteknive/<?php echo htmlspecialchars($results['article']->getImagePath())?>">
+    <meta property="og:image" content="https://rysholt.com/skotteknive/<?php echo htmlspecialchars($results['article']->getImagePath())?>">
     <meta property="og:image:width" content="320">
     <meta property="og:image:height" content="320">
-    <meta property="og:url" content="rysholt.com/skotteknive">
+    <meta property="og:url" content="https://rysholt.com/skotteknive/knive.php?action=viewArticle&articleId=<?php echo htmlspecialchars($results['article']->id)?>">
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:site_name" content="<?php echo htmlspecialchars($results['article']->title)?> | Skotteknive">
     <meta name="twitter:image:alt" content="<?php echo htmlspecialchars($results['article']->title)?> | Skotteknive">
