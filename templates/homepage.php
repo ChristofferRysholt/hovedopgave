@@ -32,7 +32,7 @@
                         <section class="gallery-top-text">Nr: <?php echo htmlspecialchars($article->id) ?></section>
                         <?php } ?>
                         <p class="summary"><?php echo htmlspecialchars($article->summary)?></p>
-                        <p class="underline">Læs mere her</p>
+                        <p class="underline gray">Læs mere her</p>
                         <br>
                       </a>
                       </section>

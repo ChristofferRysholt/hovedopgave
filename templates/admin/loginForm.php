@@ -19,6 +19,9 @@
             <input type="password" name="password" id="password" placeholder="Your admin password" required maxlength="20">
           </li>
 
+          <p style="text-align:center;">Username: admin</p>
+          <p style="text-align:center;">Password: mypass</p>
+
         </ul>
 
         <section class="buttons">

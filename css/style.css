@@ -17,8 +17,14 @@ h2 {
     margin: 0;
     margin-bottom: 0.5%;
 }
+a {
+    color: white;
+}
 .underline {
     text-decoration: underline;
+}
+.gray {
+    color: rgb(200,200,200);
 }
 .italic {
     font-style: italic;
@@ -221,6 +227,7 @@ h2 {
 .large-image {
     width: 100%;
     max-width: 320px;
+    border: 3px solid rgb(30,30,30);
 }
 .small-image {
     width: 100%;
@@ -283,7 +290,7 @@ input[type=text], select, textarea {
     resize: vertical;
 }
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: rgb(105, 150, 2);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -456,6 +463,10 @@ footer p {
     footer p {
         margin: 0;
         margin-top: 2%;
+        font-size: 1rem;
+    }
+    footer h2 {
+        font-size: 1.2rem;
     }
     .partnere {
         display: block;
