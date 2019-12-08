@@ -354,6 +354,12 @@ footer p {
     p {
         font-size: 1rem;
     }
+    /* --- video --- */
+    video {
+        width: 150px;
+        height: 300px;
+    }
+
     /* --- menu --- */
     .partnere {
         display: none;
@@ -436,6 +442,11 @@ footer p {
 }
 
 @media screen and (min-width: 500px) {
+    /* --- video --- */
+    video {
+        width: 300px;
+        height: 600px;
+    }
     .hero-image {
         width: 20em;
     }
