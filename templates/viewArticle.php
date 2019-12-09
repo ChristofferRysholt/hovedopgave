@@ -55,16 +55,6 @@
               </section>
           </section>
       </article>
-            <section id="pop-up-banner" style='display:none' onClick="hideBanner(event)">
-                <section class="cookie-message-border">
-                    <section class="cookie-message">
-                        <p>Yet another cookie policy pop-up? Yeah I know, but I am obliged to tell you that this site is using cookies - well, I just did...</p>
-                        <a href="privacy-policy.html">Information about privacy</a> 
-                        <br>
-                        <p class="gradient" onClick="PopUp('hide')"><img src="images/cross.svg" alt="Close Cookie Cross">Don't show this banner again</p>
-                    </section>
-                </section>
-            </section>
     </div>
     
     <div class="section s2 fp-auto-height">

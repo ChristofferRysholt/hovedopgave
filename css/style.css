@@ -23,6 +23,9 @@ a {
 .underline {
     text-decoration: underline;
 }
+.no-underline {
+    text-decoration: none;
+}
 .gray {
     color: rgb(200,200,200);
 }
