@@ -244,7 +244,7 @@ a {
 .gallery-top p {
     padding: 0;
     margin: 0;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 .gallery-top a {
     text-decoration: none;
@@ -341,8 +341,8 @@ footer p {
     width: 100%;
 }
 .footer-img img {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     margin-top: 1%;
 }
 

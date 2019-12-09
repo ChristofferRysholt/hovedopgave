@@ -19,9 +19,6 @@
                         <section class="footer-img">
                             <a href="https://www.instagram.com/skotteknive/"><img src="images/instagram-logo.svg" title="Instagram" alt="Skotteknive - Instagram"></a>
                         </section>
-                        <section class="footer-img">
-                            <a href="#"><img src="images/linkedin-logo.svg" title="Linkedin" alt="Skotteknive - Linkedin"></a>
-                        </section>
                     </section>
                 </footer>
           </article>
