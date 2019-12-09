@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/main.js"></script>
+    <link rel="shortcut icon" type="image/png" href="images/favicons/favicon.png">
     <meta name="author" content="Rysholt.com">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -52,6 +53,7 @@
               <h1><?php echo htmlspecialchars($results['article']->title)?></h1>
               <section class="content">
                 <p><?php echo nl2br($results['article']->content)?></p>
+                <a href="knive.php">Tilbage</a>
               </section>
           </section>
       </article>
