@@ -1,7 +1,7 @@
 new fullpage('#fullPage', {
     autoScrolling:true,
     navigation:true,
-    navigationTooltips: ['Courses', 'The workshop', 'Footer'],
+    navigationTooltips: ['Kurser', 'Værkstedet', 'Footer'],
     showActiveTooltip:true,
     scrollingSpeed: 1000,
   }

@@ -29,7 +29,7 @@
   <header>
     <nav class="topnav" id="myTopnav">
         <section id="logo"><a href="index.html"><img src="images/logo.svg" alt="Logo - Skotteknive"></a></section>
-        <a href="en/index.html"><section class="flag"><img src="images/scotland.svg" title="English / Scottish" alt="Skotsk Flag"></a></section>
+        <a href="en/index.html"><section class="flag"><img src="images/scotland.svg" title="English / Scottish" alt="Skotsk Flag"></section></a>
         <a href="en/index.html"><section class="show-none">English</section></a>
         <a href="kontakt.html">Kontakt</a>
         <a href="om.html">Om</a>

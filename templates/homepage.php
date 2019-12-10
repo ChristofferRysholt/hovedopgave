@@ -4,7 +4,7 @@
   <header>
     <nav class="topnav" id="myTopnav">
         <section id="logo"><a href="index.html"><img src="images/logo.svg" alt="Logo - Skotteknive"></a></section>
-        <a href="en/index.html"><section class="flag"><img src="images/scotland.svg" title="English / Scottish" alt="Skotsk Flag"></a></section>
+        <a href="en/index.html"><section class="flag"><img src="images/scotland.svg" title="English / Scottish" alt="Skotsk Flag"></section></a>
         <a href="en/index.html"><section class="show-none">English</section></a>
         <a href="kontakt.html">Kontakt</a>
         <a href="om.html">Om</a>
@@ -20,12 +20,10 @@
       <div id="fullPage">
         <div class="section s1">
           <article>
-          <ul id="headlines">
-
           <section class="container">
             <?php foreach ($results['articles'] as $article) { ?>
 
-              <section><h1 id="caption" class="centered"></h1></section>
+              <section><h1 class="caption centered"></h1></section>
                   <section class="mySlides">
                     <section class="gallery-top">
                       <?php if ($imagePath = $article->getImagePath(IMG_TYPE_THUMB)) { ?>
@@ -61,7 +59,6 @@
           <script src="js/form.js"></script>
           </article>
           </div>
-        </ul>
         <div class="section s2 fp-auto-height">
           <article>
 <?php include "templates/include/footer.php"?>

@@ -1,7 +1,7 @@
 new fullpage('#fullPage', {
     autoScrolling:true,
     navigation:true,
-    navigationTooltips: ['Contact', 'Form', 'Footer'],
+    navigationTooltips: ['Kontakt', 'Formular', 'Footer'],
     showActiveTooltip:true,
     scrollingSpeed: 1000,
   }
