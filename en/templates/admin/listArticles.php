@@ -14,7 +14,7 @@
       <table>
         <tr>
           <th>Publication Date</th>
-          <th>Article</th>
+          <th>Knife</th>
         </tr>
 
 <?php foreach ($results['articles'] as $article) { ?>
@@ -30,9 +30,9 @@
 
       </table>
 
-      <p><?php echo $results['totalRows']?> article<?php echo($results['totalRows'] != 1) ? 's' : '' ?> in total.</p>
+      <p><?php echo $results['totalRows']?> knive<?php echo($results['totalRows'] != 1) ? 's' : '' ?> in total.</p>
 
-      <p><a href="admin.php?action=newArticle">Add a New Article</a></p>
+      <p><a href="admin.php?action=newArticle">Add a New Knife</a></p>
 
 <?php include "templates/admin/include/footer.php" ?>
 

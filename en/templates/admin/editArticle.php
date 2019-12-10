@@ -23,18 +23,18 @@
 
         <ul>
           <li>
-            <label for="title">Article Title</label>
-            <input type="text" name="title" id="title" placeholder="Name of the article" required autofocus maxlength="255" value="<?php echo htmlspecialchars($results['article']->title )?>">
+            <label for="title">Knife Title</label>
+            <input type="text" name="title" id="title" placeholder="Name of the knife" required autofocus maxlength="255" value="<?php echo htmlspecialchars($results['article']->title )?>">
           </li>
 
           <li>
-            <label for="summary">Article Summary</label>
-            <textarea name="summary" id="summary" placeholder="Brief description of the article" required maxlength="1000" style="height: 5em;"><?php echo htmlspecialchars($results['article']->summary)?></textarea>
+            <label for="summary">Knife Summary</label>
+            <textarea name="summary" id="summary" placeholder="Brief description of the knife" required maxlength="1000" style="height: 5em;"><?php echo htmlspecialchars($results['article']->summary)?></textarea>
           </li>
 
           <li>
-            <label for="content">Article Content</label>
-            <textarea name="content" id="content" placeholder="The HTML content of the article" required maxlength="100000" style="height: 30em;"><?php echo htmlspecialchars($results['article']->content)?></textarea>
+            <label for="content">Knife Content</label>
+            <textarea name="content" id="content" placeholder="The HTML content of the knife" required maxlength="100000" style="height: 30em;"><?php echo htmlspecialchars($results['article']->content)?></textarea>
           </li>
 
           <li>
@@ -45,7 +45,7 @@
           <?php if ($results['article'] && $imagePath = $results['article']->getImagePath()) { ?>
           <li>
             <label>Current Image</label>
-            <img id="articleImage" src="<?php echo $imagePath ?>" alt="Article Image">
+            <img id="articleImage" src="<?php echo $imagePath ?>" alt="Knife Image">
           </li>
 
           <li>
@@ -69,7 +69,7 @@
       </form>
 
 <?php if ($results['article']->id) { ?>
-      <p><a class="red" href="admin.php?action=deleteArticle&amp;articleId=<?php echo $results['article']->id ?>" onclick="return confirm('Delete This Article?')">Delete This Article</a></p>
+      <p><a class="red" href="admin.php?action=deleteArticle&amp;articleId=<?php echo $results['article']->id ?>" onclick="return confirm('Delete This Knife?')">Delete This Knife</a></p>
 <?php } ?>
 
 <?php include "templates/admin/include/footer.php" ?>
