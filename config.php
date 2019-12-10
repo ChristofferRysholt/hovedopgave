@@ -1,9 +1,9 @@
 <?php
 ini_set("display_errors", true);
 date_default_timezone_set("Europe/Copenhagen");
-define("DB_DSN", "mysql:host=rysholt.com.mysql:3306;dbname=rysholt_com_skotteknive_cms_en");
-define("DB_USERNAME", "rysholt_com_skotteknive_cms_en");
-define("DB_PASSWORD", "skottekniveCmsEn");
+define("DB_DSN", "mysql:host=rysholt.com.mysql:3306;dbname=rysholt_com_skotteknive_cms");
+define("DB_USERNAME", "rysholt_com_skotteknive_cms");
+define("DB_PASSWORD", "skottekniveCms");
 define("CLASS_PATH", "classes");
 define("TEMPLATE_PATH", "templates");
 define("HOMEPAGE_NUM_ARTICLES", 10);
