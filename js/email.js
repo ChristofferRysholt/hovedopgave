@@ -1,7 +1,7 @@
 new fullpage('#fullPage', {
     autoScrolling:true,
     navigation:true,
-    navigationTooltips: ['Kvittering', 'Footer'],
+    navigationTooltips: ['Receipt', 'Footer'],
     showActiveTooltip:true,
     scrollingSpeed: 1000,
   }

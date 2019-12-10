@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo htmlspecialchars($results['pageTitle'])?></title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/main.js"></script>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <script src="../js/main.js"></script>
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
     <meta name="author" content="Rysholt.com">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -26,21 +26,21 @@
   <body>
     <main>
 <article>
-  <header>
-    <nav class="topnav" id="myTopnav">
-        <section id="logo"><a href="index.html"><img src="images/logo.svg" alt="Logo - Skotteknive"></a></section>
-        <a href="en/index.html"><section class="flag"><img src="images/scotland.svg" title="English / Scottish" alt="Skotsk Flag"></a></section>
-        <a href="en/index.html"><section class="show-none">English</section></a>
-        <a href="kontakt.html">Kontakt</a>
-        <a href="om.html">Om</a>
-        <a href="kurser.html">Kurser</a>
-        <a href="knive.php" class="active">Knive</a>
-        <a href="index.html">Home</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-    </nav>
-  </header>
+<header>
+  <nav class="topnav" id="myTopnav">
+    <section id="logo"><a href="index.html"><img src="../images/logo.svg" alt="Logo - Skotteknive"></a></section>
+      <a href="../index.html"><section class="flag"><img src="../images/denmark.svg" title="Danish / Dansk" alt="Danish flag"></a></section>
+      <a href="../index.html"><section class="show-none">Danish</section></a>
+      <a href="kontakt.html">Contact</a>
+      <a href="om.html">About</a>
+      <a href="kurser.html">Courses</a>
+      <a href="knive.php" class="active">Knives</a>
+      <a href="index.html">Home</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </nav>
+</header>
 </article>
 
   <div id="fullPage">
@@ -54,7 +54,7 @@
               <h1><?php echo htmlspecialchars($results['article']->title)?></h1>
               <section class="content">
                 <p><?php echo nl2br($results['article']->content)?></p>
-                <a href="knive.php">Tilbage</a>
+                <a href="knive.php">Return</a>
               </section>
           </section>
       </article>

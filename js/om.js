@@ -1,7 +1,7 @@
 new fullpage('#fullPage', {
     autoScrolling:true,
     navigation:true,
-    navigationTooltips: ['Om', 'Historik', 'Footer'],
+    navigationTooltips: ['About', 'History', 'Footer'],
     showActiveTooltip:true,
     scrollingSpeed: 1000,
   }
