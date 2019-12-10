@@ -1,7 +1,7 @@
 <?php include "templates/admin/include/header.php" ?>
 <?php include "templates/admin/include/header-front.php" ?>
 
-        <h1>All Articles</h1>
+        <h1>All Knives</h1>
 
         <?php if (isset($results['errorMessage'])) { ?>
                 <section class="errorMessage"><?php echo $results['errorMessage'] ?></section>
