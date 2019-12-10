@@ -473,6 +473,9 @@ footer p {
     }
 }
 @media screen and (min-width: 900px) {
+    .show-none {
+        display: none;
+    }
     /* --- footer --- */
     footer p {
         margin: 0;
