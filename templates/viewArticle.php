@@ -10,8 +10,8 @@
     <script src="js/main.js"></script>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <meta name="author" content="Rysholt.com">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="keywords" content="Håndlavede Knive, Jagtknive, Fiskeknive, Køkkenknive, Svampeknive, Lædervare, Læder Accessories">
+    <meta name="description" content="Håndlavede knive og læderarbejde af skotten Stuart Harvey. Alle mine produkter er håndlavet og unikt produceret, hvor ikke to produkter ens.">
     <meta property="og:title" content="<?php echo htmlspecialchars($results['article']->title)?> | Skotteknive">
     <meta property="og:description" content="<?php echo htmlspecialchars($results['article']->summary)?>">
     <meta property="og:type" content="knives">
