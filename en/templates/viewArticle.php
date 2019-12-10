@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="da-DK">
+<html lang="en-UK">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,8 +10,8 @@
     <script src="../js/main.js"></script>
     <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
     <meta name="author" content="Rysholt.com">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="keywords" content="Handmade Knives, Hunting Knives, Fishing Knives, Kitchen Knives, Mushroom Knives, Leather Goods, Leather Accessories">
+    <meta name="description" content="Handmade knives and leather work by the Scot Stuart Harvey. All my products are handmade and uniquely produced, with no two products alike.">
     <meta property="og:title" content="<?php echo htmlspecialchars($results['article']->title)?> | Skotteknive">
     <meta property="og:description" content="<?php echo htmlspecialchars($results['article']->summary)?>">
     <meta property="og:type" content="knives">
