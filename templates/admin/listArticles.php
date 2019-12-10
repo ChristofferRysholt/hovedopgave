@@ -1,7 +1,7 @@
 <?php include "templates/admin/include/header.php" ?>
 <?php include "templates/admin/include/header-front.php" ?>
 
-        <h1>All Articles</h1>
+        <h1>Alle Knive</h1>
 
         <?php if (isset($results['errorMessage'])) { ?>
                 <section class="errorMessage"><?php echo $results['errorMessage'] ?></section>
@@ -13,8 +13,8 @@
 
       <table>
         <tr>
-          <th>Publication Date</th>
-          <th>Article</th>
+          <th>Udgivelsesdato</th>
+          <th>Knive</th>
         </tr>
 
 <?php foreach ($results['articles'] as $article) { ?>
@@ -30,9 +30,9 @@
 
       </table>
 
-      <p><?php echo $results['totalRows']?> article<?php echo($results['totalRows'] != 1) ? 's' : '' ?> in total.</p>
+      <p><?php echo $results['totalRows']?> knive<?php echo($results['totalRows'] != 1) ? '' : '' ?> i alt.</p>
 
-      <p><a href="admin.php?action=newArticle">Add a New Article</a></p>
+      <p><a href="admin.php?action=newArticle">Tilføj kniv</a></p>
 
 <?php include "templates/admin/include/footer.php" ?>
 
