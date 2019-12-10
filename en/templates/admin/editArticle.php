@@ -12,7 +12,7 @@
     }
   </script>
 
-      <h1><?php echo $results['pageTitle']?></h1>
+      <h1>All Knives</h1>
 
       <form action="admin.php?action=<?php echo $results['formAction']?>" method="post" enctype="multipart/form-data" onsubmit="closeKeepAlive()">
         <input type="hidden" name="articleId" value="<?php echo $results['article']->id ?>">
