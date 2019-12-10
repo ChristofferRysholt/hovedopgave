@@ -33,21 +33,21 @@ if(isset($_POST['email'])) {
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
  
   if(!preg_match($email_exp,$email_from)) {
-    $error_message .= 'Email adressen du har intastet ser ikke ud til at være gyldig.<br />';
+    $error_message .= 'Email adressen du har intastet ser ikke ud til at være gyldig. <br/>';
   }
  
     $string_exp = "/^[A-Za-z .'-]+$/";
  
   if(!preg_match($string_exp,$first_name)) {
-    $error_message .= 'Fornavnet du har intastet ser ikke ud til at være gyldigt.<br />';
+    $error_message .= 'Fornavnet du har intastet ser ikke ud til at være gyldigt. <br/>';
   }
  
   if(!preg_match($string_exp,$last_name)) {
-    $error_message .= 'Efternavnet du har intastet ser ikke ud til at være gyldigt.<br />';
+    $error_message .= 'Efternavnet du har intastet ser ikke ud til at være gyldigt. <br/>';
   }
  
   if(strlen($comments) < 2) {
-    $error_message .= 'Beskeden du har intastet ser ikke ud til at være gyldig.<br />';
+    $error_message .= 'Beskeden du har intastet ser ikke ud til at være gyldig. <br/>';
   }
  
   if(strlen($error_message) > 0) {
@@ -63,7 +63,7 @@ if(isset($_POST['email'])) {
     $email_message .= "Fornavn: ".clean_string(htmlspecialchars($first_name))."\n";
     $email_message .= "Efternavn: ".clean_string(htmlspecialchars($last_name))."\n";
     $email_message .= "Email: ".clean_string(htmlspecialchars($email_from))."\n";
-    $email_message .= "Telefon Nummer: ".clean_string(htmlspecialchars($telephone))."\n";
+    $email_message .= "Telefonnummer: ".clean_string(htmlspecialchars($telephone))."\n";
     $email_message .= "Besked: ".clean_string(htmlspecialchars($comments))."\n";
  
 // create email headers
@@ -109,6 +109,7 @@ $headers = 'Fra: '.$email_from."\r\n".
       <article>
         <section class="thank-you">
             <h1>Tak for din besked <?php echo htmlspecialchars($first_name)?>. Jeg vender tilbage hurtigst muligt!</h1>
+            <a href="kontakt.html"><p>Tilbage</p></a>
         </section>
       </article>
     </div>
@@ -116,23 +117,26 @@ $headers = 'Fra: '.$email_from."\r\n".
     <div class="section s2 fp-auto-height">
       <article>
         <footer>
-          <section class="footer-section">
-            <h2>Kontakt info</h2>
-            <p>Text</p>
-            <p>Text</p>
-            <p>Text</p>
-          </section>      
-          <section class="footer-section">
-            <h2>Partnere</h2>
-            <p>Text</p>
-            <p>Text</p>
-            <p>Text</p>
-          </section>
-          <section class="footer-section">
-            <h2>SoMe</h2>
-            <p>Text</p>
-            <p>Text</p>
-            <p>Text</p>
+            <section class="footer-section">
+              <h2>Contact info</h2>
+              <p>Stuart Harvey</p>
+              <p>Telephone +45 3011 6931</p>
+              <p>stuart@skotteknive.dk</p>
+            </section>      
+            <section class="footer-section partnere">
+              <h2>Collaborators</h2>
+              <a href="Laederiet.dk" target="_blank" class="no-underline"><p>Laederiet.dk</p></a>
+              <a href="thegoodstuffshop.dk" target="_blank" class="no-underline"><p>Mogens Loft Svendsen</p></a>
+              <p>Dennis Jedig</p>
+            </section>
+            <section class="footer-section">
+              <h2>Social Media</h2>
+              <section class="footer-img">
+                <a href="https://www.facebook.com/skotteknive" target="_blank"><img src="../images/facebook-app-logo.svg" title="Facebook" alt="Skotteknive - Facebook"></a>
+              </section>
+            <section class="footer-img">
+              <a href="https://www.instagram.com/skotteknive/"><img src="../images/instagram-logo.svg" title="Instagram" alt="Skotteknive - Instagram"></a>
+            </section>
           </section>
         </footer>
       </article>
