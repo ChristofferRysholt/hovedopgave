@@ -22,7 +22,6 @@
           <article>
           <section class="container">
             <?php foreach ($results['articles'] as $article) { ?>
-
               <section><h1 class="caption centered"></h1></section>
                   <section class="mySlides">
                     <section class="gallery-top">
