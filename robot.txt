@@ -1,0 +1,12 @@
+User-Agent: *
+Dissalow: /admin.php
+Dissalow: /config.php
+Dissalow: /send_form_email.php
+Dissalow: /classes
+Dissalow: /templates
+Dissalow: /en/admin.php
+Dissalow: /en/config.php
+Dissalow: /en/send_form_email.php
+Dissalow: /en/classes
+Dissalow: /en/templates
+
