@@ -1,6 +1,11 @@
 User-Agent: *
-Disallow: /skotteknive/admin.php
-Disallow: /skotteknive/config.php
-Disallow: /skotteknive/send_form_email.php
-Disallow: /skotteknive/classes
-Disallow: /skotteknive/templates
+Dissalow: /admin.php
+Dissalow: /config.php
+Dissalow: /send_form_email.php
+Dissalow: /classes
+Dissalow: /templates
+Dissalow: /en/admin.php
+Dissalow: /en/config.php
+Dissalow: /en/send_form_email.php
+Dissalow: /en/classes
+Dissalow: /en/templates
